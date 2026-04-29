@@ -1,6 +1,6 @@
-# AGENTS.md
+# GitHub Copilot Instructions - Template for SitecoreAI Marketplace extensions
 
-## Project context
+## Project overview
 
 This project is the starter template for building Sitecore Marketplace extensions. Sitecore Marketplace extensions are TypeScript apps that extend and customize SitecoreAI products and give Sitecore users new capabilities tailored to their needs.
 The project demonstrates five extension points: Custom Field, Dashboard Widget, Fullscreen, Pages Context Panel, and Standalone. Each extension point has its own UI and integration with the Sitecore Marketplace SDK.
@@ -23,7 +23,7 @@ SitecoreAI was previously known as XM Cloud in parts of the documentation and co
 ## General coding rules
 
 - Use TypeScript-first implementation.
-- Prefer small, composable React components.
+- Prefer small, composable React code.
 - Preserve existing project conventions before introducing new patterns.
 - Do not hardcode Sitecore item IDs, API keys, hostnames, context IDs, or environment-specific values.
 - Use environment variables for configuration.
@@ -61,3 +61,13 @@ npm run build
 npm run lint
 npm test
 ```
+
+## Sitecore Marketplace skills
+The workspace contains 7 skills in `.github/skills/` that guide developers through scaffolding, building, and deploying Marketplace apps using the Sitecore Marketplace SDK (v0.4).
+
+The skills target **Next.js App Router** apps deployed on **Vercel**, using the **Blok** design system (Sitecore's shadcn-based theme).
+
+## Sitecore Marketplace skills key files
+
+- `.github/skills/*/SKILL.md` — Skill definitions (frontmatter + instructions)
+- `.github/skills/*/references/*.md` — Pre-curated API docs and code patterns
